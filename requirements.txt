@@ -1,0 +1,40 @@
+# ============================================
+# DATA MINING PROJECT REQUIREMENTS
+# Compatible with Python 3.9, 3.10, 3.11
+# ============================================
+
+# Core libraries - phiên bản ổn định, tương thích rộng
+pandas==1.5.3
+numpy==1.24.3
+scipy==1.10.1
+
+# Visualization
+matplotlib==3.7.1
+seaborn==0.12.2
+plotly==5.14.1
+
+# Machine Learning - scikit-learn phiên bản ổn định
+scikit-learn==1.2.2
+
+# Imbalanced learning - xử lý mất cân bằng dữ liệu
+imbalanced-learn==0.10.1
+
+# Association Rules
+mlxtend==0.21.0
+
+# Gradient Boosting frameworks
+xgboost==1.7.6
+lightgbm==3.3.5
+
+# Neural Networks - sử dụng tensorflow thay vì keras riêng
+# TensorFlow 2.13 tương thích Python 3.8-3.11
+tensorflow==2.13.0
+
+# Jupyter
+jupyter==1.0.0
+ipykernel==6.22.0
+jupyterlab==3.6.3
+
+# Additional utilities
+tqdm==4.65.0  # Progress bars
+joblib==1.2.0  # Parallel processing
