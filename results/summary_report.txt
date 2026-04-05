@@ -2,10 +2,10 @@
 SUMMARY REPORT - DATA MINING PROJECT
 ============================================================
 
-Ngày: 2026-03-16 11:36:53
+Ngày: 2026-04-05 10:21:48
 
-Tổng số mẫu: 12330
-Train: 8631 samples
+Tổng số mẫu: 18289
+Train: 14590 samples
 Test: 3699 samples
 Số features: 30
 
@@ -13,37 +13,37 @@ Số features: 30
 KẾT QUẢ PHÂN LỚP
 ============================================================
                      CV Mean F1  CV Std F1  Accuracy  Precision  Recall  F1-Score  AUC-ROC  Train Time (s)
-Gradient Boosting        0.6682     0.0147    0.8978     0.7055  0.5822    0.6379   0.9270          7.0244
-Random Forest            0.6516     0.0182    0.9005     0.7406  0.5490    0.6305   0.9152          3.2203
-XGBoost                  0.6338     0.0234    0.8916     0.6763  0.5734    0.6206   0.9191          1.7489
-Decision Tree            0.5780     0.0270    0.8586     0.5405  0.5717    0.5556   0.7414          0.1871
-Logistic Regression      0.5105     0.0295    0.8797     0.7260  0.3566    0.4783   0.8913          0.1151
-Naive Bayes              0.4360     0.0150    0.6691     0.2937  0.8112    0.4312   0.8059          0.0402
+Gradient Boosting        0.9114     0.0659    0.8843     0.6078  0.7098    0.6548   0.9243         28.3558
+Random Forest            0.9383     0.0329    0.8859     0.6206  0.6748    0.6466   0.9150          5.9789
+XGBoost                  0.8778     0.1726    0.8878     0.6435  0.6154    0.6291   0.9177          6.7057
+Logistic Regression      0.8326     0.0130    0.8556     0.5235  0.7395    0.6130   0.8932          0.2741
+Decision Tree            0.8937     0.0481    0.8497     0.5121  0.5927    0.5494   0.7447          0.6074
+Naive Bayes              0.7504     0.0050    0.5169     0.2270  0.8829    0.3611   0.8015          0.0738
 
 ============================================================
 TOP 3 MODELS
 ============================================================
 
 1. Gradient Boosting
-   - F1-Score: 0.6379
-   - Accuracy: 0.8978
-   - Precision: 0.7055
-   - Recall: 0.5822
-   - AUC-ROC: 0.9270
-   - Train Time: 7.02s
+   - F1-Score: 0.6548
+   - Accuracy: 0.8843
+   - Precision: 0.6078
+   - Recall: 0.7098
+   - AUC-ROC: 0.9243
+   - Train Time: 28.36s
 
 2. Random Forest
-   - F1-Score: 0.6305
-   - Accuracy: 0.9005
-   - Precision: 0.7406
-   - Recall: 0.5490
-   - AUC-ROC: 0.9152
-   - Train Time: 3.22s
+   - F1-Score: 0.6466
+   - Accuracy: 0.8859
+   - Precision: 0.6206
+   - Recall: 0.6748
+   - AUC-ROC: 0.9150
+   - Train Time: 5.98s
 
 3. XGBoost
-   - F1-Score: 0.6206
-   - Accuracy: 0.8916
-   - Precision: 0.6763
-   - Recall: 0.5734
-   - AUC-ROC: 0.9191
-   - Train Time: 1.75s
+   - F1-Score: 0.6291
+   - Accuracy: 0.8878
+   - Precision: 0.6435
+   - Recall: 0.6154
+   - AUC-ROC: 0.9177
+   - Train Time: 6.71s

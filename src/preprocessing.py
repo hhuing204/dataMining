@@ -245,3 +245,34 @@ class DataPreprocessor:
         if y is not None:
             return X_scaled, y
         return X_scaled
+    
+
+
+    def handle_imbalance(self, X, y, method='smote'):
+        """
+        Xử lý mất cân bằng dữ liệu (CHỈ dùng cho training set)
+        """
+        print("\n" + "="*70)
+        print("XỬ LÝ MẤT CÂN BẰNG DỮ LIỆU")
+        print("="*70)
+
+        print("Phân bố trước:")
+        print(y.value_counts())
+
+        # Kiểm tra nếu đã gần cân bằng thì bỏ qua
+        ratio = y.value_counts().min() / y.value_counts().max()
+        if ratio > 0.8:
+            print("\nDữ liệu đã gần cân bằng → bỏ qua SMOTE")
+            return X, y
+
+        if method == 'smote':
+            sampler = SMOTE(random_state=42)
+        else:
+            raise ValueError(f"Method '{method}' chưa hỗ trợ")
+
+        X_resampled, y_resampled = sampler.fit_resample(X, y)
+
+        print("\nPhân bố sau:")
+        print(pd.Series(y_resampled).value_counts())
+
+        return X_resampled, y_resampled

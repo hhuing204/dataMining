@@ -150,6 +150,7 @@ def run_classification_pipeline():
     # Fit-transform trên training data
     train_df = pd.concat([X_train, y_train], axis=1)
     X_train_processed, y_train_processed = preprocessor.fit_transform(train_df)
+    X_train_processed, y_train_processed = preprocessor.handle_imbalance(X_train_processed, y_train_processed)
     
     # Transform trên test data
     test_df = pd.concat([X_test, y_test], axis=1)
